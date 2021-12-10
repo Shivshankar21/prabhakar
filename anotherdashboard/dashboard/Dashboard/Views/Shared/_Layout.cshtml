@@ -1,0 +1,131 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Dashboard</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+
+    <style>
+        #nav {
+            list-style: none inside;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            background: black;
+        }
+
+            #nav li {
+                display: block;
+                position: relative;
+                float: left;
+               
+            }
+
+                #nav li a {
+                    display: block;
+                    padding: 0;
+                    text-decoration: none;
+                    width: 200px;
+                    
+                    line-height: 35px;
+                   
+                    color: #ffffff;
+                    
+                    background: black;
+                }
+
+                #nav li li a {
+                    font-size: 80%;
+                }
+
+                
+                #nav li:hover {
+                    background: #003f20;
+
+                }
+
+            
+
+            #nav ul {
+                position: absolute;
+                padding: 0;
+                left: 0;
+                display: none;
+               
+            }
+
+            #nav li:hover ul ul {
+                display: none;
+            }
+
+            
+
+            #nav li:hover ul {
+                display: block;
+            }
+
+            
+
+            #nav li li:hover ul {
+                display: block;
+               
+                margin-left: 200px;
+                
+                margin-top: -35px;
+               
+            }
+    </style>
+
+</head>
+<body>
+    <header>
+           
+
+            <ul id="nav">
+                <li>
+                    <a href="#">Add Page</a>
+                    <ul>
+                        <li><a href="#">Category</a>
+                            <ul>
+                                <li><a href="@Url.Action("Newcategory","Category")">New Category</a>
+                               
+                                <li><a href="@Url.Action("Listcategory","Category")">List Category</a>
+                            </ul>
+                        </li>
+                        <li><a href="#">Add Pages</a>
+                            <ul>
+                                <li><a href="@Url.Action("Newpage","Addpage")">New Page</a>
+                                <li><a href="@Url.Action("Listpage","Addpage")">List Page</a>
+                               
+                            </ul>                        
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">Admin Dashboard</a></li>
+            </ul>
+
+           
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2021 - Dashboard - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+       
+    </footer>
+        <script src="~/lib/jquery/dist/jquery.min.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+        @RenderSection("Scripts", required: false)
+</body>
+</html>
