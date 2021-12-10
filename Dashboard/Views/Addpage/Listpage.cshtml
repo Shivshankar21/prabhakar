@@ -1,0 +1,73 @@
+﻿
+@model IEnumerable<Dashboard.Models.Pagemodel>
+
+<div class="container p-3">
+    <div class="row pt-4">
+        <div class="col-6">
+            <h2 class="text-primary">Page List</h2>
+        </div>
+        <div class="col-6 text-right">
+            <a asp-controller="Addpage" asp-action="Newpage" class="btn btn-primary">
+                <i class="fas fa-plus"></i> &nbsp; Add a page
+            </a>
+        </div>
+    </div>
+
+   
+    <table class="table table-bordered table-striped" style="width:100%">
+        <thead>
+            <tr>
+                <th width="25%">
+                    Page Name
+                </th>
+                <th width="25%">
+                    Slug
+                </th>
+                <th width="25%">
+                    Category
+                </th>
+                <th width="25%">
+                    
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+    </table>
+
+    @if (Model.Count() > 0)
+    {
+        <table class="table table-bordered table-striped" style="width:100%">
+
+            <tbody>
+                @foreach (var obj in Model)
+                {
+                    <tr>
+                        <td width="25%">@obj.Page_Name</td>
+                        <td width="25%">@obj.Slug</td>
+                        <td width="25%">@obj.Category</td>
+
+                        <td width="25%" class="text-center">
+                            <div class="w-75 btn-group" role="group">
+                                <a asp-controller="Addpage" asp-route-Id="@obj.Id" asp-action="Editpage" class="btn btn-primary mx-2">
+                                    <i class="fas fa-edit"></i>
+                                    <input type="submit" class="btn btn-primary w-100" value="Edit" />
+                                </a>
+                                <a asp-controller="Addpage" asp-route-Id="@obj.Id" asp-action="Deletepage" class="btn btn-danger mx-2">
+                                    <i class="far fa-trash-alt"></i>
+                                    <input type="submit" class="btn btn-danger w-100" value="Delete" />
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <p> No category exists.</p>
+    }
+
+</div>
+
+
