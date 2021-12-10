@@ -1,0 +1,77 @@
+1. Write an SQL query to fetch the EmpId and Name of all the employees working under Manager with id – ‘986’.
+----SELECT  EmpId, Name FROM EmployeeDetails WHERE ManagerId = 986;
+
+2. Write an SQL query to fetch the different projects available from the EmployeeSalary table.
+----SELECT DISTINCT(Project) FROM EmployeeSalary;
+
+3. Write an SQL query to fetch the count of employees working in project ‘P1’.
+----SELECT COUNT(*) FROM EmployeeSalary WHERE Project = 'P1';
+
+4. Write an SQL query to find the maximum, minimum, and average salary of the employees.
+----SELECT Max(Salary), Min(Salary), AVG(Salary) FROM EmployeeSalary;
+
+5. Write an SQL query to find the employee id whose salary lies in the range of 9000 and 15000.
+----SELECT EmpId, Salary FROM EmployeeSalary WHERE Salary BETWEEN 9000 AND 15000;
+
+6. Write an SQL query to fetch those employees who live in Toronto and work under manager with ManagerId – 321.
+----SELECT EmpId, City, ManagerId FROM EmployeeDetails WHERE City='Toronto' AND ManagerId='321';
+
+7. Write an SQL query to fetch all those employees who work on Project other than P1.
+----SELECT EmpId FROM EmployeeSalary WHERE NOT Project='P1';
+
+8. Write an SQL query to fetch the employees whose name begins with any two characters, followed by a text “hn” and 
+   ending with any sequence of characters.
+----SELECT FullName FROM EmployeeDetails WHERE FullName LIKE ‘__hn%’;
+
+9. Write an SQL query to fetch common records between two tables.
+----SELECT * FROM EmployeeSalary INTERSECT SELECT * FROM ManagerSalary;
+
+10. Write an SQL query to fetch records that are present in one table but not in another table.
+----SELECT * FROM EmployeeSalary MINUS SELECT * FROM ManagerSalary;
+
+11. Write an SQL query to fetch the EmpIds that are present in both the tables –   ‘EmployeeDetails’ and ‘EmployeeSalary.
+----SELECT EmpId FROM EmployeeDetails WHERE EmpId IN (SELECT EmpId FROM EmployeeSalary);
+
+12. Write an SQL query to display both the EmpId and ManagerId together.
+----SELECT CONCAT(EmpId, ManagerId) as NewId FROM EmployeeDetails;
+
+13. Write an SQL query to upper case the name of the employee and lower case the city values.
+----SELECT UPPER(Name), LOWER(City) FROM EmployeeDetails;
+
+14. Fetch all the employees who are not working on any project.
+----SELECT EmpId FROM EmployeeSalary WHERE Project IS NULL;
+
+15. Write an SQL query to fetch employee names having a salary greater than or equal to 5000 
+    and less than or equal to 10000.
+----SELECT FullName FROM EmployeeDetails WHERE EmpId IN (SELECT EmpId FROM EmployeeSalary WHERE Salary BETWEEN 5000 AND 10000);
+
+16. Write an SQL query to find the current date-time.
+----SELECT getdate();
+
+17.  Write an SQL query to fetch only odd rows from the table.
+----SELECT * FROM EmployeeDetails WHERE MOD (EmpId, 2) <> 0;
+
+18. Write an SQL query to fetch only even rows from the table
+----SELECT * FROM EmployeeDetails WHERE MOD (EmpId, 2) = 0;
+
+19. Write an SQL query to create a new table with data and structure copied from another table.
+----CREATE TABLE NewTable SELECT * FROM EmployeeSalary;
+
+20.  Write an SQL query to fetch top n records?
+----SELECT TOP N * FROM EmployeeSalary
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

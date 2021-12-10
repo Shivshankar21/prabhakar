@@ -1,0 +1,115 @@
+1. What are the different components of .NET?
+----Common Language run-time
+    Application Domain
+    Common Type System
+   .NET Class Library
+   .NET Framework
+    Profiling
+
+2. What do you know about CTS?
+----CTS stands for Common Type System
+   It compiles the 2 defferent language data type to common data types.
+
+3. What is CLR?
+----CLR stands for common language run-time
+    It converts IL language to machine language
+    It is responsible for run gorbage collector.
+
+4. Explain CLS?
+----CLS stands for Common language specification
+    It defines set of rule that every languages in the .net frame work should follow.
+
+5. What do you know about JIT?
+----JIT stands for Just-In-Time (JIT) compiler
+    It converts Intermediate language(IL)  into the Machine code by the Just-In-Time (JIT) compiler.
+
+
+6. Why do we use Response.Output.Write()?
+----used to get the formatted output(means converts binary form of data to ASCII data).                                                                                                             
+
+7. What is the difference between Response.Redirect and Server.Transfer?
+---1. Response.Redirect : Response.Redirect basically redirects the user’s browser to another page or site
+   2. Server.Transfer:  Server.Transfer navigates the pages within the same application or within the same server.
+
+8.  What is BCL?
+----BCL stands for base class library of classes.
+    It has number of common functions(like library) and developer can use that in .NET frame.
+
+9. What is the difference between namespace and assembly?
+----1. Namespace: Namespace is groups classes and it has multiple assemblies
+    2. Assembly: Assembly is groups of logical units.
+
+
+10. What is LINQ?
+----LINQ stands for Language integrated query
+    It generate queries to retrieve data from the database.
+
+
+11. What is MSIL?
+----MSIL stands for Microsoft Intermediate Language
+    It provides instructions for calling methods, storing and initializing values, memory handling, 
+    exception handling and so on.
+
+12. From which base class all web Forms are inherited?
+----All web forms are inherited from page class.
+
+13. What are MDI and SDI?
+----1. MDI( Multiple Document Interface): An MDI lets you open multiple windows, it will have one parent window and
+       as many child windows
+    2. SDI( Single Document Interface): It opens each document in a separate window. Each window has its own components
+
+14. What is caching?
+----Caching means storing the data temporarily in the memory.
+
+15.  Explain MVC?
+----MVC stands for Model View Controller which is an architecture to build .NET applications.
+
+    Model: They are the logical part of any application that handles the object storage and 
+           retrieval from the databases for an application.
+  
+    View: View handles the UI part of an application. They get the information from the models 
+          for their display.
+
+    Controller: They handle the user interactions, when get input request from user then it send output response to user.
+
+
+16. What is CAS?
+---CAS stands for Code Access Security
+   CAS is a part of a security model that prevents unauthorized access to the resources.
+
+17. What are EXE and DLL?
+----1. EXE: It is an executable file that runs the application for which it is designed.
+    2. DLL: It stands for dynamic link library that consists of code that needs to be hidden.
+
+18. What is cross-page posting?
+----Whenever we click on a submit button on a page, the data is stored on the same page. But if the 
+    data is stored on a different page that is known as a cross-page posting.
+
+19. What is Kestrel?
+----It is cross platform web server in .NET and it run your web application on linux,macOS etc
+
+20. What is Middleware?
+----Middleware is pipeline that handles requests and responses.
+
+21. What is Startup class?
+----It is an entry point of .net core application.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   

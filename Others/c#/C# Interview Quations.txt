@@ -1,0 +1,283 @@
+1. How is C# different from C?
+----The biggest difference is that C# supports automatic garbage collection by Common Language Runtime (CLR) while C does not
+
+2. What is Common Language Runtime (CLR)?
+----CLR handles program execution for various languages including C#. The architecture of CLR handles memory management, garbage collection, security handling
+
+3. What is garbage collection in C#?
+----Garbage collection is the process of freeing up memory that is captured by unwanted objects. When you create a class object, automatically some memory space
+     is allocated to the object in the heap memory.
+
+4. What are the types of classes in C#?
+   1. Static class
+   2. Partial class
+   3. Abstract class
+   4. Sealed class
+
+5. What is a managed and unmanaged code?
+-----Managed code lets you run the code on a managed CLR runtime environment in the .NET framework. 
+-----Unmanaged code is when the code doesn’t run on CLR, it is an unmanaged code that works outside the .NET framework. 
+
+6. What is the difference between an abstract class and an interface?
+
+              Abstract class                                                            Interface
+   1. It contains both declaration and definition part.                        1. It contains only a declaration part.
+   2. abstract classes can have both abstract and non-abstract methods         2. Only abstuct method
+   3. Multipale inheritance not posible                                        3. posible
+   4. It contain constructor.                                                  4. It does not contain constructor.
+
+7. What are the differences between ref and out keywords?
+----C# ref keywords pass arguments by reference and not by value.
+----C# out keywords pass arguments within methods and functions.
+
+8. What are extension methods in C#?
+----Extension methods help to add new methods to the existing ones. The methods that are added are static.
+
+9. What are Generics in C#?
+---- Define generic classes, interfaces, abstract classes etc by using the type parameter and  we can create object without specific data type.
+     Generics reduce the load of using boxing, unboxing, and Typecasting objects.
+
+10. What is the difference between an Array and ArrayList in C#?
+                   
+                               Array                                                         ArrayList
+       1. An Array is strongly-typed.                                                1. it is not strongly-typed.  
+       2. array are of the same datatype                                             2. arraylist are of the different datatype 
+       3. arrays cannot accept null                                                  3. arrayslist can accept null
+       4. Array belongs to system.array namespace                                    4. Arraylist belongs to system.collection namespace
+       5 . We cannot change size                                                     5. We can change the size
+
+11. What is Boxing and Unboxing in C#?
+----Boxing: Boxing converts value type (int, char, etc.) to reference type
+----Unboxing: Unboxing converts reference type (object) to value type
+
+12. What are Properties in C#?
+----By using properties in C# you can easily access the private members and set their values. By get and set method.
+
+13. What are partial classes in C#?
+----Partial classes implement the functionality of a single class into multiple files. These multiple files are combined into one during compile time.
+
+14. What is the difference between late binding and early binding in C#?
+           
+                                      Early Binding                                                       Late Binding
+                1. Here compiler knows about what kind of object it is           1. Here compiler dont knows about what kind of object it is
+                2.
+
+15.  What are the Arrays in C#?
+---- Group of similar elements is groupped together under one name is called as arrays.
+
+16. What are Indexers in C#?
+----Indexers are called smart arrays that allow access to a member variable. Indexers are not static members. 
+
+17. Difference between the Equality Operator (==) and Equals() Method in C#?
+----Although both are used to compare two objects by value, still they both are used differently. 
+    -Equality Operator (==)---Objects Compares by reference
+    -Equals() method: ---Object Compares by value 
+
+18.  What are the different ways in which a method can be Overloaded in C#?
+----Overloading means when a method has the same name but different parameter.
+    A method can be Overloaded By----
+     1. Change the number of parameters in a method 
+     2. Change the order of parameters in a method 
+     3. Use different data types for parameters
+
+19. What is Reflection in C#?
+----Reflection in C# extracts metadata from the datatypes during runtime. 
+
+20.  What is the difference between constant and readonly in C#?
+----Constant: A const keyword in C# is used to declare a constant field. That means once a variable has been declared const, 
+    its value cannot be changed throughout the program.
+----Readonly: you can assign the variable only when it is declared.
+
+21. What is the difference between String and StringBuilder in C#?
+                                             
+                                     String                                           StringBuilder
+                                 1. It is immutable                                1. It is a mutable
+                                 2. con't perform veriety of operation             2. Perform veriety of operation
+                                 3. New memory allocation for new value            3. No memory allocation for new value
+
+22. What is serialization?
+----A process of converting some code into its binary format is known as a serialization. it requiers to do when object is transper to network.
+ 1. Binary Serialization
+ 2. SOAP
+ 3. XML Serialization
+
+23. What is an interface class?
+----An Interface is an abstract class, here we difine only method and there is no implimention of method occures.
+
+24.  How can we sort the elements of the Array in descending order?
+----Using Sort() methods followed by Reverse() method.
+
+25. What is an object pool in .NET?
+----An object pool is a container having objects ready to be used. from which we can come to know that the object is currently using or not and how
+    many object are in pool.
+
+26. What are commonly used types of exceptions in .net?
+----1. Arithmetic Exception 
+    2. DivideByZero Exception 
+    3. Overflow Exception
+    4. InvalidOperation Exception 
+    5. OutOfMemory Exception
+
+27. What is the difference between a Struct and a Class?
+
+                                      Struct                                            Class
+                        1. This are value-type                          1. This are reference type
+                        2. By defult members are public                 2. By defult members are private
+                        3. Not Supports inheritance.                    3. supports inheritance 
+
+
+28. what is Parsing?
+----The method of converting sting data type to anther data type.
+    EX: sting text="200"
+    int.num=int.parse(text)
+
+29. When Race condition occurce?
+----When two threads accessing same resources and geting change at same time.
+
+30. What is thread pooling?
+-----the collection of threads that performs tasks without disturbing the primary thread.
+
+31. What is difference between "is" and "as" operators in c#?
+----"is" operator is used to check the compatibility of an object
+    "as" operator is used for casting of an object.
+
+32. List down the access modifiers available in C#?.
+
+ A) Public- When a method is defined as public it can be accessed from any part of code.
+
+ B) Private- A  method can be accessed from within the class itself.
+
+ C) Protected- When a method defined as protected, it can be accessed only within that class and the one inheriting the class.
+
+ D) Internal- When a method is defined as internal, then it will be accessed from that class at the current assembly position.
+
+ E) Protected Internal- When a method as protected internal, then it’s access restricted to classes within the current project
+                        assembly or different types defined by that class.
+
+33. Distinguish between Continue and Break Statement?
+----Break: Using break statement you can ‘jump out’ of the loop
+----Continue:Use of continue statement you can jump over an iteration and continue the loop execution.
+
+34. What are the different approaches of passing parameters to a method?
+   1. Value Parameters
+   2. Reference Parameters
+   3. Output Parameters
+
+35. Distinguish between finally and finalize blocks?
+ 1. finally block is called after the execution of try and catch blocks, even execuption occurce or not occurce in code also this finally bock got execute.
+ 2. The finalize method is called just before the garbage collection. perform clean up operation for unmanaged code.
+
+
+36.  Illustrate Namespaces in C#?
+---- Namespaces are used for organizing large code projects.
+
+
+37. Define "using" statement in C#?
+----“Using” keyword simply denotes that the particular namespace is being used by the program.
+
+
+38. Define a Jagged Array in C#?
+----A Jagged array is referred to as an “array of arrays”. It is an array whose elements are arrays.
+
+
+39.  Define Collections?
+----A collection works like a container for  instances of class.
+
+40.  Define Delegate?
+----Delegate is a variable that holds the reference to a method. (its a type safe function pointer)
+
+41. Illustrate the differences between the System.Array.CopyTo() and System.Array.Clone()?
+----System.Array.Clone(): A new array object is created containing all elements of the original array.
+----System.Array.CopyTo():  All the elements of the existing array gets copied into another existing array.
+
+
+42. What are Events?
+---- A concept where it consists of a Publisher, Subscriber, Notification and a handler. 
+
+43. What is method shadowing or method hiding in C#?
+---- It hides the base class method implementation. 
+
+
+44.  What is enum in C#?
+----An enum is a special "class" that represents a group of constants. To create an enum, use the "enum" keyword.
+
+
+45. Explain Hash table in C# ?
+----A Hash table is a collection of Keys (or) Values pairs. that are arranged based on the hash code.
+
+46. What is a class?
+----A Class describes all the attributes of the object.
+
+47. What is the difference between public, static and void?
+  1. Public: You can access public declared variables anywhere in the application.
+  2. Static: Static declared variables are globally accessible without creating an instance of the class.
+  3. Void: Void is a type modifier that specifies that the method doesn’t return any value.
+
+48. What is Data Encapsulation?
+----The process of hiding the important fields from the end-user. 
+
+49. What is Multithreading with .NET?
+----Multiple threads running at the same time and performing various tasks is referred as Multithreading.
+
+50. What do you mean by Typecasting in C#?
+----When we assign the value of one data type to another data type, here we can use Typecasting
+    "Typecasting"------> C# does Automatic Type Conversion. 
+
+51. what is View State?
+----View State is the method to protect the Value of the Page and Controls.
+
+52. What is twodot string?
+----It will return the values between the first and the last dot.
+
+53. What is an enumerator in C#?
+----An enumerator helps you to count the collection of items. And helps u to knows where you are in the collection and where the next item is.
+
+54. What is function in c#?
+----Function is a block of code that has a signature
+
+55. What is the difference between constant and readonly in C#?
+----1)Constant: A variable which have constant value and it will not change throughout the program
+    2)Readonly: We can change the value during runtime and it is posible only through the non-static constructor.
+
+56. Can “this” be used within a static method? 
+----We can't use 'this' in a static method because the keyword 'this' returns a reference to the current instance of the class
+    so, Static methods can exist without creating an instance of the class.
+
+57. What is the difference between the dispose and finalize methods in C#?
+----1) Dispose: It is used to free unmanaged resources that are not in use by explicitly called.
+    2) Finalize: It is used to free unmanaged resources that are not in use by implicitly called.
+
+58. What is filters and its types?
+
+    Filters: Check the Authorization,  and preventing access to resources for Unauthorized users.
+
+    1. Authorization filters: Run first and are used to determine whether the user is authorized for the request. 
+    2. Resource filters: This runs code before model binding.
+    3. Action filters: This runs immediately before and after an action method is called.
+       --Here we can change the arguments passed into an action and Are not supported in Razor Pages.
+    4. Exception filters: It handle the exceptions that occur before the response.
+    5. Result filters:  This run code immediately before and after the execution of action results. They run only when the action method has executed successfully.
+.
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+             
+             
+
+
+
+
+
+
+   

@@ -1,0 +1,42 @@
+using System;
+using  PATA = projectA.TaemA;
+using System.Collections;
+using System.Configuration;
+
+class praveen
+{
+    public static void Main()
+    {
+       PATA.classA.print();
+        
+    }
+
+}
+namespace projectA
+{ 
+    namespace TaemA
+    {
+        class classA
+        {
+            public static void print()
+            {
+                Console.WriteLine("Team A print Method");
+            }
+        }
+    }
+
+}
+namespace projectA
+{
+    namespace TaemB
+    {
+        class classA
+        {
+            public static void print()
+            {
+                Console.WriteLine("Team B print Method");
+            }
+        }
+    }
+
+}

@@ -1,0 +1,85 @@
+using System;
+class program
+{
+    static void Main()
+    {
+        start:
+        Console.WriteLine("1 - small, 2 - medium, 3 - large,");
+        int userchoice = int.Parse(Console.ReadLine());
+        int totalpencost = 0;
+        switch (userchoice)
+        {
+            case 1:
+                totalpencost += 1;
+        break;
+            case 2:
+                totalpencost += 2;
+        break;
+            case 3:
+                totalpencost += 3;
+        break;
+            default:
+                Console.WriteLine("user choice is invalid");
+                break;
+        }
+        decide:
+        Console.WriteLine("do you want buy anther pen - yes or no");
+        string userD = Console.ReadLine();
+
+        switch (userD.ToUpper())
+        {
+            case "yes ":
+                goto start;
+              
+            case "no":
+                break;
+            default:
+                Console.WriteLine("your choice is invalid. plse try agin ");
+                goto  decide;
+
+        }
+
+
+        Console.WriteLine("thanks for shpping with us");
+           ...............................................................
+      
+    }
+   
+        
+}
+
+
+                                                                                                              DO WHILE LooP
+using System;
+class proijhv
+{
+    static void Main()
+    {
+        string userchoice = string.Empty;
+        do
+        { 
+        Console.WriteLine("pls enter the target");
+        int userTarget = int.Parse(Console.ReadLine());
+        int start = 0;
+        while (start <= userTarget)                                                                     ITS GETTING EXTER 2 number 
+        {
+            start = start + 2;
+            Console.WriteLine(start);
+            Console.ReadLine();
+        }
+       
+        do
+        {
+            Console.WriteLine("do u want to contone - yes or no ");
+            userchoice = Console.ReadLine();
+            if (userchoice  != "yes" && userchoice != "no")
+
+            {
+                Console.WriteLine("invalid choice plse say yes or no");
+            }
+        } while (userchoice  != "yes" && userchoice != "no");
+        } while (userchoice == "yes") ;
+        
+  
+    }
+}

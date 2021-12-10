@@ -1,0 +1,1 @@
+https://www.c-sharpcorner.com/article/binding-dropdown-list-with-database-in-asp-net-core-mvc/

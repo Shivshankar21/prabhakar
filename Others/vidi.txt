@@ -1,0 +1,280 @@
+                                          switch statment 
+
+class Program
+{
+    static void Main()
+    {
+        int Totalcofeecost = 0;
+        Console.WriteLine("1 - small ,2 - medium , 3 - large");
+        int Userchoice = int.Parse(Console.ReadLine());
+        switch (Userchoice)
+        {
+            case 1:
+                Totalcofeecost += 1;
+                break;
+                Console.ReadLine();
+            case2:
+                Totalcofeecost += 2;
+                break;
+                Console.ReadLine();
+            case3:
+                Totalcofeecost += 3;
+                break;
+                Console.ReadLine();
+            default:
+                Console.WriteLine("your choice {0} is invalid");
+                break;
+                Console.ReadLine();
+        }
+    }
+}                                                                        ELSE, ESLE IF IF 
+
+
+
+ using System;
+
+class program
+{
+    static void Main()
+    {
+        Console.WriteLine("please enter the name ");
+        int userNumber = int.Parse(Console.ReadLine());
+
+        if (userNumber == 1)
+        {
+            Console.WriteLine("ypur number is one ");
+        }
+           
+
+
+        else if (userNumber == 2)
+        {
+            Console.WriteLine("ypur number is two ");
+            Console.ReadLine();
+        }
+        
+      else
+        {
+            Console.WriteLine("ypur number is three ");
+            Console.ReadLine();
+
+        }
+    }
+}
+
+
+                                                                                                           part -12
+                                                                                                            switch
+
+using System;
+class Program
+{
+    static void Main()
+    {
+        int Totalcofeecost = 0 ;
+
+        start:
+        Console.WriteLine("1 - small ,2 - medium , 3 - large");
+        int Userchoice = int.Parse(Console.ReadLine());
+        switch (Userchoice)
+        {
+            case 1:
+                Totalcofeecost += 1;
+                Console.ReadLine();
+                break;
+            case2:
+                Totalcofeecost += 2;
+                Console.ReadLine();
+                break;
+            case3:
+                Totalcofeecost += 3;
+                Console.ReadLine();
+                break;
+            default:
+                Console.WriteLine("your choice {0} is invalid");
+                Console.ReadLine();
+                break;
+        }
+        Deside:
+        Console.WriteLine("Do you waant to buy another cofee - yes or no");
+        string UserDecision = Console.ReadLine();
+
+        switch (UserDecision.ToUpper())
+        {
+            case "yes":
+                goto start;
+            case "No":
+                break;
+            
+            default:
+                Console.WriteLine("your choise {0} is invalid.Please try again");
+                goto Deside;
+        }
+    }
+}
+
+                                                                                                                               part 13
+                                                                                                                              While loop
+
+
+
+using System;
+class Prpogram
+{
+    static void Main()
+    {
+        Console.WriteLine("Please enter your target?");
+        int UserTarget = int.Parse(Console.ReadLine());
+        int start = 0;
+        while (start <= UserTarget)
+        {
+            Console.Write(start + " ");
+            start = start + 2;
+            Console.Read();
+        }
+    }   
+}
+
+                                                                                                         for and foreach loop part-15
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int[] Numbers = new int[3];
+        Numbers[0] = 101;
+        Numbers[1] = 102;
+        Numbers[2] = 103;
+
+        foreach (int k in Numbers)
+        {
+            Console.WriteLine(k);
+        }
+        for(int j = 0;j < Numbers.Length; j++)
+        {
+            Console.WriteLine(Numbers[j]);
+        }
+
+
+
+        int i = 0;
+        while (i < Numbers.Length)
+        {
+            Console.WriteLine(Numbers[i]);
+            i++;
+        }
+    }
+}
+
+                                                                                                                                             
+                                                                                                                       part - 15
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        for(int i = 0; i < 20; i = i + 2)
+        {
+            if (i % 2 == 1)
+                continue;
+            Console.WriteLine(i);
+            
+                
+
+        }
+    }
+}
+
+                                                                                                                             part 16
+                                                                                                                             methods
+using System;
+
+class Program
+{
+    public static void Add(int num1, int num2)
+    {
+        int result = num1 + num2;
+        Console.WriteLine("Addition result is:"+ result);
+    }
+    static void Main()
+    { 
+        Program.Add(10, 20);
+        Program.Add(50, 30);
+        Program.Add(60, 30);
+
+    }
+}
+                                                                                                                       string type
+using System;
+
+class Program
+{
+public static void  Showname(string name)
+    {
+        Console.WriteLine("Your name is:" + name);
+    }
+    
+    static void Main(string[] args)
+    {
+        Program.Showname ("adil");
+    }
+
+                                                                                                                    unknown
+using System;
+
+class Program
+{
+public static void  Showname(string name = "unknown")
+    {
+        Console.WriteLine("Your name is:" + name);
+    }
+    
+    static void Main(string[] args)
+    {
+        Program.Showname ();
+    }
+}
+                                                                                                                      age
+using System;
+
+class Program
+{
+public static void  Showage(int age =18)
+    {
+        Console.WriteLine("Your age is:" + age);
+    }
+    
+    static void Main(string[] args)
+    {
+        Program.Showage (22);
+    }
+} 
+                                                                                                                             age
+using System;
+
+class Program
+{
+public static void  Showage(int age =18)
+    {
+        Console.WriteLine("Your age is:" + age);
+    }
+    
+    static void Main(string[] args)
+    {
+        Program.Showage ();
+    }
+}
+                                                                                                                  modifier
+using System;
+
+class car
+{
+    public string modle = "pavan";
+    static void Main()
+    {
+        car p = new car();
+        Console.WriteLine(p.modle);
+    }
+}

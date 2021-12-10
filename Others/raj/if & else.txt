@@ -1,0 +1,53 @@
+using System;
+class praveen
+{
+    static void Main()
+    {
+        int numb = 10;
+        bool isnumber10;
+        
+        if (numb == 10)
+        {
+            isnumber10 = true;
+
+        }
+        else
+        {
+            isnumber10 = false;
+        }
+        Console.WriteLine("numb == 10 is {0}", isnumber10);
+   
+    }
+}                                                                                            TRNARY OPARATAR
+
+
+using System;
+class praveen
+{
+    static void Main()
+    {
+  
+      int numb = 10;
+        bool isnumber10 = numb == 10 ? true : false; 
+       
+        Console.WriteLine("numb == 10 is {0}", isnumber10);
+        Console.ReadLine();      
+   
+    }
+}
+
+
+
+using System;
+class praveen
+{
+    static void Main()
+    {
+        int x = 10, y = 8;
+
+        var reslut = x == y ? "kgftyu" : "kjhgftyuj";  ...............syntax for ternary oparator 
+        Console.WriteLine(reslut);
+        Console.ReadLine();
+   
+    }
+}

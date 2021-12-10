@@ -1,0 +1,144 @@
+1. What is the full form of MVC?
+---- Model View Controller.
+
+
+2. What do you understand by Model View Control?
+3. Explain Model, View and Controller in brief
+----A model can be defined as the data that will be used by the program. Commonly used examples of models 
+    in MVC are the database,  a simple object holding data (such as any multimedia file or the character of a game),
+    a file, etc.
+
+    A view is a way of displaying objects (user interfaces) within an application. This is the particular vertical 
+    through which end users will communicate.
+
+    A controller is the third vertical which is responsible for updating both models and views. It accepts input from 
+    users as well as performs the equivalent update. In other words, it is the controller which is responsible for 
+    responding to user actions.
+
+4. What are the different return types used by the controller action method in MVC?
+----View Result
+    JSON Result
+    Content Result
+    Redirect Result
+    JavaScript Result
+
+5. Name the assembly in which the MVC framework is typically defined.
+----In the System.Web.Mvc, the MVC framework is defined.
+
+6. Explain the MVC Application life cycle.
+
+7. What are the various steps to create the request object?
+----To create a request object, we have 4 steps
+         Step 1: Fill the route
+         Step 2: Fetch the route
+         Step 3: Create a request context
+         Step 4: Create a controller instance
+
+8. Explain some benefits of using MVC?
+----Support of multiple views
+    Faster development process
+    SEO-friendly development
+    More Control
+    Lightweight
+
+9. Explain in brief the role of different MVC components?
+----Presentation
+    Control
+    Abstraction
+
+10. How will you maintain the sessions in MVC?
+----view data
+    temp data 
+    view bag
+
+11. Which are adding routes in a webform application & an MVC application?
+----1) MapPageRoute()---> for webform application
+    2) MapRoute()----> for MVC application
+
+12. 3 logical layers of MVC?
+----Model logic which acts as a business layer
+    View logic which acts as a display layer
+    Controller logic acts as input control
+
+13. What is the use of ActionFilters in MVC?
+----ActionFilters are used for executing the logic while MVC action is executed.
+
+14. What are the 3 important segments for routing?
+----ControllerName
+    ActionMethodName
+    Parameter
+
+15.  How is the routing carried out in MVC?
+----- first parameter: first determines the name of the route
+      second parameter: determines which URL matches
+      third parameter:  responsible for providing default values for its placeholders.
+
+16. How will you navigate from one view to another view in MVC? 
+----- By ActionLink method 
+
+17. Explain the 3 concepts in one line; Temp data, View, and Viewbag?
+-----Temp data: This is used for maintaining the data when there is a shift of work from one controller to another controller.
+     View data: This is used for maintaining the data when we will shift from a controller to a view within an application.
+     View Bag: This acts as a view data’s dynamic wrapper.
+
+18. Difference between ActionResult and ViewResult?
+
+                         ActionResult                                         ViewResult
+    1. It is effective when we diriving different views dynamically      1. Its not effective
+    2. It is Derived from Abstract class                                 2. It is Derived from Action result class
+    3. It has Derived class(Json result class,View result class)         3. Not have its own Derived class
+
+19. What is TempData in MVC?
+----Used to transfer the data from one controller to anther controller.
+
+20. Define Output Caching in MVC?
+----In controller method from this,If the data used earlier does not 
+    get generated each time while invoking the same controller method.
+
+21. Make a differentiation between View and Partial View?
+
+                            View                                                   Partial View
+                  1. It is not a lightweight                                  1. It is  lightweighted 
+                  2. It has its own layout page                               2. It dont have own layout page
+                  3. It has markup tags HTML                                  3. It dont have markup tags
+
+22.  Define the concept of Filters in MVC?
+----Filters: which implements some logic to execute the action method.
+
+  1. Action filter 
+  2. Exception filter 
+  3. Authorization filter 
+  4. Result filter 
+
+23. Define Scaffolding in MVC?
+----It is  ASP.NET’s code-generation framework used in web applications.
+
+24. When multiple filters are used in MVC, how is the ordering of execution of the filters done?
+----First, the authorization filters--->Action filters--->response filters--->exception filters
+
+25. Define Default Route in MVC?
+----It is a generic route that makes the URL into 3 segments URL: “{controller} / {action} / {id}”
+
+26. What is GET and POST Action types?
+----1.GET Action Type: It is implemented for requesting the data from a particular resource.
+    2.POST Action Type: It is implemented for submitting the data that handled to a certain resource.
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

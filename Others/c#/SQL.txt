@@ -1,0 +1,156 @@
+1. What is Database?
+----A database is an organized collection of data, stored and retrieved digitally from a remote or local computer system.
+
+2. What is DBMS? and its types?
+----DBMS stands for Database Management System. DBMS is a system software responsible for the creation, retrieval, updation 
+    and management of the database
+ Types : 
+        1. Relational Database Management System
+        2. Non-Relational Database Management System
+
+3. What is RDBMS? How is it different from DBMS?
+--- RDBMS stands for Relational Database Management System.
+    RDBMS: stores data in the form of a collection of tables.
+    DBMS : is a system software responsible for the creation, retrieval, updation and management of the database.
+
+4. What is SQL?
+----SQL stands for Structured Query Language. It is the standard language for relational database management systems.
+    It is useful in handling data.
+
+5. What is the difference between SQL and MySQL?
+--- SQL  : Used  for retrieving and manipulating structured databases.
+--- MySQL : It  is used to manage SQL databases.
+
+6. What are Tables and Fields?
+---Table: A table is an organized collection of data stored in the form of rows and columns.
+   Fields:  The columns in a table are called fields.
+
+7. What is a Primary Key? 
+----The PRIMARY KEY  uniquely identifies data of each row in a table and it is NOT allow NULL.
+
+8.  What is a Foreign Key?
+----It is set of attribute that reference to primary key of same table or anther table. it allows NULL.
+
+9.  What is a Join? List its different types.
+----Join: Is used to combine rows from two or more tables.
+----Types: 
+          (INNER)JOIN: Returns records that have matching values in both tables
+          (OUTER)LEFT JOIN: Retrive all records from the left table, and the matched records from the right table
+          (OUTER)RIGHT JOIN: Retrive  all records from the right table, and the matched records from the left table
+          (OUTER)FULL JOIN: Retrive  all records when there is a match in either left or right table.
+
+10. What is a Self-Join?
+----A self JOIN  joined to itself based on some relation between its own columns.
+
+11.  What is an Index? Explain its different types.
+---- A Index is the method of incresing the speed of data retrieval from the table.
+Types : Unique Index
+        Non-Unique Index
+        Clustered Index 
+        Non-Clustered Index
+
+12. What is a Query?
+----A query is a request for data or information from a database table 
+
+13. What are UNION, MINUS and INTERSECT commands?
+     UNION : It is used to combine the two selected queries.
+     MINUS : Maching the record of 1st and 2nd query and removes the duplicants
+     INTERSECT : It returns the row which are common in both Queries
+
+14. What are Entities and Relationships?
+----Entity: An entity can be a real-world object.
+----Relationships: Relations or links between entities. 
+
+15. List the different types of relationships in SQL.
+----One-to-one : The relationship between two tables where one table record associated with one table only.
+    One-to-many : Used relationship where a record in a table is associated with multiple records(city and custermers in city)
+    Many-to-many : 
+    Self Referencing Relationships : 
+
+16. What is a View?
+----A view is a virtual table contains rows and columns, just like a real table.
+
+17. What are the TRUNCATE, DELETE and DROP statements?
+----TRUNCATE : TRUNCATE command is used to delete all the rows from the table and free the space containing the table.
+    DELETE : DELETE statement is used to delete specific rows from a table.
+    DROP : DROP command is used to remove an object from the database. 
+
+18. What is the difference between DROP and TRUNCATE statements?
+----DROP here hole structure of table gets drop but in TRUNCATE only delete all the rows from the table not strucutre.
+
+19. What is the difference between DELETE and TRUNCATE statements?
+----DELETE: It is a DML command and used to delete specific row from the table but in TRUNCATE: It is a DDL command and all the rows from the teble gets delete.
+
+20. What are Aggregate and Scalar functions?
+---Aggregate : Performes operation and returns single scalar value.
+   Scalar functions :A scalar function returns a single value based on the input value.
+
+21. What are the different subsets of SQL?
+--- 1. Data Definition Language (DDL) – It allows you to perform various operations on the database such as CREATE, ALTER, and DELETE objects.
+    2. Data Manipulation Language(DML) – It allows you to access and manipulate data. It helps you to INSERT, UPDATE, DELETE and retrieve data from the database.
+    3. Data Control Language(DCL) – It allows you to control access to the database. Example – Grant, Revoke access permissions.
+
+22.  What is the difference between CHAR and VARCHAR datatype in SQL?
+---Both CHAR and VARCHAR are used for characters datatype but CHAR has fixed lenght for string and VARCHAR has variable length for string.
+
+23. What do you mean by data integrity? 
+----Data Integrity defines the accuracy and consistency of the data stored in a database.
+
+24. What is the difference between Clustered and Non-clustered index in SQL?
+
+                                          clustered                                              Non-clustered 
+                          1. Retrieval of data speed is fast                                       1. Slow
+                          2. It alters the way records of database                                 2. It does not alter the way records of database
+                          3. One table can only have one clustered index                           3. One table can have many non-clustered index
+
+25. . What do you mean by Normalization and Denormalization?
+--- 1. Normalization: Normalization is used to remove redundant data from the database.
+    2. Denormalization: Denormalization is used to combine multiple table data into one.
+
+26. How can you fetch common records from two tables?
+----You can fetch common records from two tables using INTERSECT.
+
+27. What is an ALIAS command?
+---- ALIAS is the name that can be given to any table or a column.This ALIAS name is used to identify the particular table or a column.
+
+28. What is a Stored Procedure?
+----A Stored Procedure is a function which consists of many SQL statements to access the database system.
+
+29. What are the advantages and disadvantages of Stored Procedure?
+.... Advantages: 1. Store and call the data for several times whenever it is required
+                 2. It is faster execution.
+     Disadvantages: 1. It is executed only in the database and required more memory.
+
+30. What are Local and Global variables?
+----Local variables:  Variables can access only inside the function  where it is defined.
+    Global variables: Variables can accessed throughout the program.
+     
+
+31. Difference between Function and Storeprocedure?
+  
+                                   Function                                                 Storeprocedure
+                         1. Only return One value                                      1. Retuen table  many times
+                         2. its not support Exception handling                         2. It supports
+                         3. function can call storeprocedure                           3. but storeprocedure not call function
+                        
+32. What is the SQL Group by and Having Clause?.
+----1. Group by:  It is used to group rows that have the same values.
+    2. Having: It is used to take specific data from group by data.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,27 @@
+using System;
+
+class prgram
+{
+    int x;
+    public prgram(int i)
+    {
+       
+        Console.WriteLine("paramrt constructor is called:" +  i);
+
+    }
+    public void display()
+    {
+        Console.WriteLine("value of x is :" + x);
+    }
+    static void Main()
+
+    {
+        prgram cd1 = new prgram(10);
+        prgram cd2 = new prgram(102);
+
+
+        cd1.display();
+        cd2.display();
+        Console.ReadLine();
+    }
+}
